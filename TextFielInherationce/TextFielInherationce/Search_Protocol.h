@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @protocol Search_Protocol <NSObject>
-//搜索方法
+//搜索方法(非本地)
 - (void)searchWithKey:(NSString *)keyWord;
+//搜索方法(本地)
+- (void)searchLocalWithKey:(NSString *)keyWord;
 @end

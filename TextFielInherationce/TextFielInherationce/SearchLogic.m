@@ -11,6 +11,12 @@
 @implementation SearchLogic
 
 - (void)searchWithKey:(NSString *)keyWord{
-    NSLog(@"### %@ SearchLogic.h %s(%d) ",keyWord , __PRETTY_FUNCTION__, __LINE__);
+
+    NSLog(@"###非本地搜索: %@ SearchLogic.h %s(%d) ",keyWord , __PRETTY_FUNCTION__, __LINE__);
 }
+- (void)searchLocalWithKey:(NSString *)keyWord{
+
+    NSLog(@"###本地搜索: %@ SearchLogic.h %s(%d) ",keyWord , __PRETTY_FUNCTION__, __LINE__);
+}
+
 @end

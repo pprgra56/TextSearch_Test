@@ -44,7 +44,7 @@
 
 -(void)searchLogicSearchBarWithKey:(NSString *)keyWord{
 
-    [self.searchLogic searchWithKey:keyWord];
+    [self.searchLogic searchLocalWithKey:keyWord];
     
 }
 @end
