@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Search_Protocol.h"
 
+
 @interface SearchLogic : NSObject<Search_Protocol>
 
 @end

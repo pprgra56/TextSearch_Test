@@ -7,6 +7,7 @@
 //
 
 #import "SearchBar.h"
+#import "Search_Protocol.h"
 
 
 @interface SearchBar()
@@ -17,26 +18,16 @@
 
 @implementation SearchBar
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
 
-        self.textFile = [[UITextField alloc] init];
-        [self addSubview:self.textFile];
+
+//
+-(instancetype)initWithFrame:(CGRect)frame withSearchLogic:(id <Search_Protocol>)searchLogic{
+    self = [super initWithFrame:frame];
+    if(self) {
+        _searchLogic = searchLogic;
     }
     return self;
 }
 
--(void)setFrame:(CGRect)frame{
-    [super setFrame:frame];
-    self.textFile.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
-}
 
-
-
-
-- (void)search{
-    NSLog(@"### SearchBar %s(%d) " , __PRETTY_FUNCTION__, __LINE__);
-}
 @end
